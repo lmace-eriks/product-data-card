@@ -1,0 +1,45 @@
+.container {
+}
+
+.detailsRow {
+  display: grid;
+  grid-template-columns: 10rem 1fr 5rem;
+  padding: 0.5rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+.detailsRow:last-of-type {
+  border-bottom: none;
+}
+
+.spec {
+  display: flex;
+  align-items: flex-start;
+  font-weight: bold;
+}
+
+.value {
+}
+
+.valueStack {
+}
+
+.valueText {
+}
+
+.valueImage {
+}
+
+.learnMore {
+  display: block;
+  margin-left: auto;
+  width: fit-content;
+  color: #666;
+  font-size: 0.85rem;
+  text-align: center;
+  background: transparent;
+  padding: 0.15rem;
+  border: none;
+  text-decoration: underline;
+  cursor: pointer;
+}
