@@ -35,6 +35,7 @@ export interface PointObject {
 }
 
 export interface MoreInfoObject {
+  title?: string;
   text?: string;
   image?: string;
 }

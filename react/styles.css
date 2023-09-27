@@ -34,7 +34,7 @@
   display: block;
   margin-left: auto;
   width: fit-content;
-  color: #666;
+  color: #757575;
   font-size: 0.85rem;
   text-align: center;
   background: transparent;
@@ -42,4 +42,49 @@
   border: none;
   text-decoration: underline;
   cursor: pointer;
+}
+
+.dialog {
+  padding: 1rem;
+  width: fit-content;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 0.25rem;
+  z-index: 11;
+  max-width: 50rem;
+}
+
+.dialog::backdrop {
+  background: rgba(0, 0, 0, 0.75);
+}
+
+.dialogTitle {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.dialogText {
+  padding: 0 0.25rem;
+  text-align: center;
+}
+
+.dialogImage {
+  padding: 0.5rem;
+}
+
+.dialogButton {
+  font-family: inherit;
+  display: block;
+  width: fit-content;
+  margin: 0 auto;
+  font-weight: bold;
+  border: none;
+  background-color: #ec1d24;
+  border-radius: 0.25rem;
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem 1.5rem;
+  cursor: pointer;
+  margin-top: 1rem;
 }
