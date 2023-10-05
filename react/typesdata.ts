@@ -3,7 +3,7 @@ export interface ProductDataCardProps {
 }
 
 export interface DataPoints {
-  // allStyle?: PointObject;
+  allStyle?: PointObject;
   baseTech?: PointObject;
   baseType?: PointObject;
   bestUse?: PointObject;
@@ -28,7 +28,7 @@ export interface DataPoints {
 }
 
 export interface PointObject {
-  spec?: string;
+  attribute?: string;
   label: string;
   info?: MoreInfoObject;
   value?: any; // Loaded dynamically from VTEX.
@@ -41,17 +41,17 @@ export interface MoreInfoObject {
 }
 
 export const snowboardDataPoints: DataPoints = {
-  // allStyle: {
-  //   spec: "Test_ProductData_AllStyle_SB",
-  //   label: "All Style",
-  //   info: {
-  //     text: "All Style is the ipsum lorum dolor sit amet.",
-  //     image:
-  //       "/arquivos/ids/365382-500-auto?v=638296259506800000&width=500&height=auto&aspect=true",
-  //   },
-  // },
+  allStyle: {
+    attribute: "ProductData_AllStyle_SB",
+    label: "All Style",
+    info: {
+      text: "All Style is the ipsum lorum dolor sit amet.",
+      image:
+        "/arquivos/ids/365382-500-auto?v=638296259506800000&width=500&height=auto&aspect=true",
+    },
+  },
   baseTech: {
-    spec: "Test_ProductData_WinBaseTech_SB",
+    attribute: "ProductData_WinBaseTech_SB",
     label: "Base Tech",
     info: {
       text: "Base Tech is the ipsum lorum dolor sit amet.",
@@ -60,7 +60,7 @@ export const snowboardDataPoints: DataPoints = {
     },
   },
   baseType: {
-    spec: "ProductData_WinBaseType_SB",
+    attribute: "ProductData_WinBaseType_SB",
     label: "Base Type",
     info: {
       text: "Base Type is the ipsum lorum dolor sit amet.",
@@ -69,7 +69,7 @@ export const snowboardDataPoints: DataPoints = {
     },
   },
   core: {
-    spec: "Test_ProductData_WinCore_SB",
+    attribute: "ProductData_WinCore_SB",
     label: "Core",
     info: {
       text: "Core is the ipsum lorum dolor sit amet.",
@@ -78,7 +78,7 @@ export const snowboardDataPoints: DataPoints = {
     },
   },
   flex: {
-    spec: "ProductData_WinFlex_SB",
+    attribute: "ProductData_WinFlex_SB",
     label: "Flex",
     info: {
       text: "Flex is the ipsum lorum dolor sit amet.",
@@ -87,7 +87,7 @@ export const snowboardDataPoints: DataPoints = {
     },
   },
   mounting: {
-    spec: "ProductData_WinMounting_SB",
+    attribute: "ProductData_WinMounting_SB",
     label: "Mounting",
     info: {
       text: "Mounting is the ipsum lorum dolor sit amet.",
@@ -96,7 +96,7 @@ export const snowboardDataPoints: DataPoints = {
     },
   },
   profile: {
-    spec: "ProductData_WinProfile_SB",
+    attribute: "ProductData_WinProfile_SB",
     label: "Profile",
     info: {
       text: "Profile is the ipsum lorum dolor sit amet.",
@@ -105,7 +105,7 @@ export const snowboardDataPoints: DataPoints = {
     },
   },
   riderLevel: {
-    spec: "ProductData_WinRiderLvl_SB",
+    attribute: "ProductData_WinRiderLvl_SB",
     label: "Rider Level",
     info: {
       text: "Rider Level is the ipsum lorum dolor sit amet.",
@@ -114,7 +114,7 @@ export const snowboardDataPoints: DataPoints = {
     },
   },
   stance: {
-    spec: "ProductData_WinStance_SB",
+    attribute: "ProductData_WinStance_SB",
     label: "Stance",
     info: {
       text: "Stance is the ipsum lorum dolor sit amet.",
@@ -123,7 +123,7 @@ export const snowboardDataPoints: DataPoints = {
     },
   },
   shape: {
-    spec: "ProductData_WinShape_SB",
+    attribute: "ProductData_WinShape_SB",
     label: "Shape",
     info: {
       text: "Shape is the ipsum lorum dolor sit amet.",
@@ -132,7 +132,7 @@ export const snowboardDataPoints: DataPoints = {
     },
   },
   gender: {
-    spec: "ProductData_Gender_SB",
+    attribute: "ProductData_Gender_SB",
     label: "Gender",
     info: {
       text: "Gender is a social construct.",
@@ -144,14 +144,14 @@ export const snowboardDataPoints: DataPoints = {
 
 // export const skiDataPoints: DataPoints = {
 //   allStyle: {
-//     spec: "ProductData_AllStyle_SK",
+//     attribute: "ProductData_AllStyle_SK",
 //     label: "All Style",
 //     info: {
 //       text: "This is the info for a ski All Style",
 //     },
 //   },
 //   bindings: {
-//     spec: "ProductData_WinBindings_SK",
+//     attribute: "ProductData_WinBindings_SK",
 //     label: "Bindings",
 //     info: {
 //       text: "This is the info for a ski All Style",
